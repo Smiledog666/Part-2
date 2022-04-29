@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q1</title>
+<link rel="stylesheet" href="external.css">
+<ul class="navigation">
+<li><a href="ABOUT.html">About</a></li>
+<li><a href="HOME.html">Home</a></li>
+<li><a href="LOGIN.html">Login</a></li>
+</ul>
+<ul class="header">
+Question 1: What is being depicted in the picture bellow?
+</ul>
+<article class="main">
+<center><img src="bg.jpg" alt="Louis XIV Execution" style="width:30em; height:15em;"></center>
+</article>
+</head>
+
+<footer>
+<ul class="body">
+<form>
+<input type="radio" id="1" name="Question_1" required="required">
+<label for="html">The execution of King Louis XIV</label><br>
+<input type="radio" id="2" name="Question_1" value="0" required="required">
+<label for="css">The start of the American revolution</label><br>
+<input type="radio" id="3" name="Question_1" value="0" required="required">
+<label for="javascript">The end of the 7 Years War</label><br>
+<input type="radio" id="4" name="Question_1" value="0" required="required">
+<label for="javascript">The defenestration of Prague</label><br>
+</h2>
+<br>
+</form>
+<a href="Q2.html">
+<input type="submit">
+</a>
+</ul>
+
+<script>
+if(document.getElementById('1').checked) {
+  	localStorage.setItem("score", "1");
+} else {
+	localStorage.setItem("score", "0");
+}
+</script>
+</footer>
+</HTML>

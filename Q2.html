@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="external.css">
+<ul class="navigation">
+<li><a href="ABOUT.html">About</a></li>
+<li><a href="HOME.html">Home</a></li>
+<li><a href="LOGIN.html">Login</a></li>
+</ul>
+
+<ul class="header">Question 2: Who is giving the speech and what revolution are they associated with?</ul>
+<ul class="body">
+<audio controls>
+<source src="Q2.mp3" type="audio/mpeg">
+</audio>
+</article>
+</head>
+
+
+<footer>
+<form>
+<input type="radio" id="1" name="Question_2" value="0" required="required">
+<label for="html">Ruhollah Khomeini, following the Iranian Revolution</label><br>
+<input type="radio" id="2" name="Question_2" value="0" required="required">
+<label for="javascript">Vladimir Lenin, following the October Revolution</label><br>
+<input type="radio" id="3" name="Question_2" value="1" required="required">
+<label for="css">Fidel Castro, following the Cuban Revolution</label><br>
+<input type="radio" id="4" name="Question_2" value="0" required="required">
+<label for="javascript">Karl Liebknecht, following the German Revolution</label><br>
+<br>
+</form>
+<a href="RESULTS.html">
+<input type="submit" value="Submit">
+</a>
+</ul>
+
+<script>
+let score = localStorage.getItem("score");
+if(document.getElementById('3').checked) {
+	let newscore = int(score) + 1;
+  	localStorage.setItem("score", "newscore")
+}else {
+	let newscore = score + 0;
+	document.cookie = "score="+newscore+;
+}
+</script>
+</footer>
+</html>
